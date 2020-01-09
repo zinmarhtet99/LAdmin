@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/library"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtview"
+         android:text="Welcome to Library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:textColor="#adff2f"
+        />
+
+
+    <Button
+        android:id="@+id/borrowbook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Borrow Book"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#add8e6"
+        app:layout_constraintTop_toBottomOf="@+id/imgview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/returnbook"
+         />
+
+    <Button
+        android:id="@+id/returnbook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#7fff00"
+        android:text="Return Book"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/borrowbook"
+        app:layout_constraintLeft_toRightOf="@+id/borrowbook"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <Button
+        android:id="@+id/addbook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ff00ff"
+        android:text="Add book"
+        app:layout_constraintLeft_toLeftOf="@+id/borrowbook"
+        app:layout_constraintTop_toBottomOf="@id/borrowbook"
+        app:layout_constraintRight_toLeftOf="@id/viewbook"
+
+
+        />
+
+    <Button
+        android:id="@+id/viewbook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ffe4c4"
+        android:text="View Book"
+        app:layout_constraintRight_toRightOf="@id/returnbook"
+        app:layout_constraintTop_toBottomOf="@id/borrowbook"
+        app:layout_constraintLeft_toRightOf="@id/addbook"
+        />
+
+
+    <Button
+        android:id="@+id/createidcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#7fffd4"
+        android:text="Create Idcard"
+        app:layout_constraintTop_toBottomOf="@id/addbook"
+        app:layout_constraintLeft_toLeftOf="@id/addbook"
+        app:layout_constraintRight_toRightOf="@id/addbook"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

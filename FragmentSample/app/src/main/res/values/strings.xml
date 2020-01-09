@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FragmentSample</string>
+    <string name="article">My name is Zin Mar Htet.I am computer student.
+        I attend University of Computer Studies Monywa.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
